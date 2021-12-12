@@ -55,6 +55,9 @@ button {
   background-color: rgb(180, 204, 204);
   font-size: 0.8rem;
 }
+button:hover {
+  background-color: rgb(138, 156, 156);
+}
 
 .countriesList {
   display: flex;
