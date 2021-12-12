@@ -4,16 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <h1>Covid-19 Stats</h1>
-      <div class="graph"></div>
-      <div class="parameters"></div>
-      <div class="continents"></div>
-      <div class="countries"></div>
+      <h1 class="title">Covid-19 Stats</h1>
+      <div class="graph">
+        <div class="loader"></div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="parameters">
+        <button class="confirmed">Confirmed</button>
+        <button class="deaths">Deaths</button>
+        <button class="recovered">Recovered</button>
+        <button class="criticals">Criticals</button>
+        <button class="DeathRate">DeathRate</button>
+        <button class="RecoveredRate">Recovered Rate</button>
+        <button class="CasesPerMillionPopulation">
+          Cases Per Million Population
+        </button>
+      </div>
+      <div class="continents">
+        <button class="Africa">Africa</button>
+        <button class="Americas">Americas</button>
+        <button class="Asia">Asia</button>
+        <button class="Europe">Europe</button>
+        <button class="Oceania">Oceania</button>
+        <button class="World">World</button>
+      </div>
+      <div class="countries">
+        <button class="a-d">A-D</button>
+        <button class="e-k">E-K</button>
+        <button class="l-p">L-P</button>
+        <button class="q-v">Q-V</button>
+        <button class="w-z">W-Z</button>
+      </div>
+      <div class="countriesList"></div>
     </div>
+
     <script src="/index.js"></script>
+    <script src="chart.js/dist/chart.js"></script>
+    <script>
+      // var myChart = new Chart(ctx, {...});
+    </script>
   </body>
 </html>
